@@ -40,3 +40,7 @@ We can see here that there are only 60 Vine program reviews and 14,477 normal cu
 We can see here that 56.67% of Vine program reviewers left five star reviews on products. We can also see that 56.72% of regular reviewers left five star reviews on products.
 
 ## Summary
+
+With our initial summary statistics we cannot determine whether or not there is bias from reviewers in the Vine program. Both Vine program reviewers and regular reviewers are leaving 5 star reviews at a 57% rate, so additional analysis is needed in order to determine this.
+
+It is worth noting that the specific dataset used in this project was reviews left on musical instruments. In order to perform further analysis to determine bias, I would recommend performing the exact analysis that we just performed, except on different datasets. In the S3 bucket that I pulled from, there are 49 more datasets with the exact same schema as the dataset in this project. Replicating this analysis would be fairly straightforward, as most of the code can be reused. 
