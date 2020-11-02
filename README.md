@@ -19,3 +19,24 @@ After our data was loaded into our SQL database, we returned to PySpark in order
 With this new, transformed data we were able to calculate some data points that would potentially help with answering SellBy's inquiry regarding review bias.
 
 ## Results
+After transforming our review data, we were able to create the two DataFrames below:
+
+### Vine Program Reviews
+![](https://github.com/christianhargett/Amazon_Vine_Analysis/blob/main/vine_paid_df.png)
+
+### Regular Customer Reviews
+![](https://github.com/christianhargett/Amazon_Vine_Analysis/blob/main/vine_unpaid_df.png)
+
+Once we were able to create a DataFrame containing only Vine program reviews and a DataFrame containing only normal reviews, we then calculated some summary statistics for each DataFrame.
+
+### Total Review Counts
+![](https://github.com/christianhargett/Amazon_Vine_Analysis/blob/main/review_counts.png)
+
+We can see here that there are only 60 Vine program reviews and 14,477 normal customer reviews. This is helpful in determining how many Vine reviews that SellBy can expect for their products, but we still want to determine if there is any bias in reviewers participating in the Vine program
+
+### Five Star Review Statistics (Vine Program vs. Regular Reviews)
+![](https://github.com/christianhargett/Amazon_Vine_Analysis/blob/main/five_star_stats.png)
+
+We can see here that 56.67% of Vine program reviewers left five star reviews on products. We can also see that 56.72% of regular reviewers left five star reviews on products.
+
+## Summary
