@@ -12,3 +12,6 @@ In order to analyze this data we used both PySpark and SQL to perform the ETL pr
 - "review_id_df: a DataFrame where each row contains information for an individual review. Information per row includes review ID, customer ID, product ID, product parent, and review dat.
 - "vine_df": a DataFrame where each row contains information for an individual review, only in this table contains information regarding the star rating, helpful votes, total votes, if it's a review left through the Vine program, and verified purchase. 
 
+Once we were finished transforming our data, we then loaded our data from PySpark into our PgAdmin database.
+
+After our data was loaded into our SQL database, we returned to PySpark in order to further analyze our Amazon review data. Since SellBy was interested in learning about any potential review bias for the Vine program, we had to perform some further transformations our data. We did this by creating a new PySpark file and extracting/transforming the data to match the "vine_df" from our previous steps. We then filtered out reviews that had less than 20 votes, as well as filtered out reviews where the "helpful votes" were less than 50% of the "total votes". 
